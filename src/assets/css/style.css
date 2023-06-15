@@ -8,6 +8,10 @@ html {
     font-family: 'Rubik', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 :root {
     --px-theme: #5c3f3f;
     --px-theme-text: #ffdad9;

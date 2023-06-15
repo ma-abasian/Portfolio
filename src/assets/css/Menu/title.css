@@ -1,6 +1,7 @@
 .menu__title {
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 10px;
     text-align: center;
+    font-size: 0.75rem;
     border-bottom: 1px solid #fff;
 }
