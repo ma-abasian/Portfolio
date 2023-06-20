@@ -1,0 +1,8 @@
+.content {
+    width: 100%;
+}
+
+.home {
+    background-color: var(--px-bg);
+    /*padding: 100px 180px;*/
+}

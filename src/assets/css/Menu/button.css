@@ -4,13 +4,13 @@
 
 .menu__button:hover  .menu__button-icon {
     background-color: #5C3F3F;
-
 }
 
 .menu__button-icon{
     padding: 4px 20px;
     margin-bottom: 8px;
     border-radius: 35px;
+    transition: 0.3s;
 }
 
 .menu__button-link {
