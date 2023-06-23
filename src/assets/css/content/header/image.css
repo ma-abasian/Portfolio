@@ -1,6 +1,5 @@
 .header__image-container {
-    width: 50%;
-    /*height: 100%;*/
+    width: 100%;
     position: relative;
 }
 
@@ -27,4 +26,20 @@
     position: absolute;
     left: -40px;
     bottom: -60px;
+}
+
+@media (min-width: 1024px) {
+    .header__image-container {
+        width: 52%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__image-container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+
 }

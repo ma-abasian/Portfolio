@@ -4,12 +4,24 @@
     box-sizing: border-box;
 }
 
+#root{
+    overflow: hidden;
+}
+
 html {
     font-family: 'Rubik', sans-serif;
 }
 
 a{
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul,li {
+    list-style: none;
 }
 
 :root {

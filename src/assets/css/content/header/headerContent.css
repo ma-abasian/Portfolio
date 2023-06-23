@@ -1,5 +1,22 @@
-.header__content{
-    width: 50%;
-    background-color: crimson;
-    padding-left: 45px;
+
+
+@media (min-width: 1024px) {
+    .header__content {
+        width: 48%;
+        align-items: center;
+        display: flex;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__content {
+        width: 50%;
+        padding-left: 48px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+
 }

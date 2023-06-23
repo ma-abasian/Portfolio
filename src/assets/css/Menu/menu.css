@@ -1,12 +1,83 @@
-.menu{
-    position: sticky;
+.mobile__menu-container{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
     top: 0;
+    left: 0;
+    background-color: var(--px-gray-1);
+    z-index: 4;
+    border-bottom: 1px solid var(--px-border);
+}
+
+.mobile__menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 12px;
+}
+
+.mobile__menu-toggle .material-symbols-outlined{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile__menu-toggle {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--px-theme);
+    color: var(--px-theme-text);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu{
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    left: -100px;
     background-color: var(--px-gray-2);
     height: 100vh;
     width: 100px;
+    z-index: 5;
 }
 
 .menu__buttons{
     padding: 10px 0;
     width: 100%;
+}
+
+
+
+@media (min-width: 576px) {
+    .mobile__menu {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile__menu {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile__menu {
+        max-width: 960px;
+        display: none;
+    }
+
+    .menu{
+        position: sticky;
+        left: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+
 }

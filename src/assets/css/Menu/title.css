@@ -5,3 +5,13 @@
     font-size: 0.75rem;
     border-bottom: 1px solid #fff;
 }
+
+.mobile__menu .menu__title {
+    border: 1px solid var(--px-theme-text);
+    border-radius: 10px;
+}
+
+
+@media (min-width: 1440px) {
+
+}

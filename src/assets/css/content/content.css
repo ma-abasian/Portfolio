@@ -1,8 +1,11 @@
-.content {
-    width: 100%;
+.home {
+    display: flex;
+    justify-content: center;
+    background-color: var(--px-bg);
 }
 
-.home {
-    background-color: var(--px-bg);
-    /*padding: 100px 180px;*/
+@media (min-width: 1024px) {
+    .content {
+        width: 100%;
+    }
 }

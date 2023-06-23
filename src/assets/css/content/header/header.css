@@ -1,5 +1,18 @@
 .home__header {
+    padding: 100px 0;
+    width: 100%;
     display: flex;
-    padding: 100px 200px;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+
+    .home__header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media (min-width: 1440px) {
 
 }

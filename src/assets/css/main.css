@@ -1,5 +1,47 @@
 .main{
+    position: relative;
     display: flex;
-    background-color: chocolate;
+    flex-direction: column;
+    background-color: var(--px-bg);
+}
+
+.container {
+    position: relative;
     width: 100%;
+    padding: 0 12px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .main{
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main{
+        flex-direction: row;
+    }
 }
