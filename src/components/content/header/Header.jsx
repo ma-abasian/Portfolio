@@ -6,7 +6,7 @@ import HeaderContent from "./HeaderContent.jsx";
 const Header = () => {
     return (
         <div className="home__header">
-            <Image imageSrc="/src/assets/images/home-banner.png"/>
+            <Image imageSrc="https://portfolio-dun-chi-37.vercel.app/src/assets/images/home-banner.png"/>
             <HeaderContent/>
         </div>
     );
