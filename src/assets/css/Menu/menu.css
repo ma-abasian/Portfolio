@@ -44,7 +44,20 @@
     background-color: var(--px-gray-2);
     height: 100vh;
     width: 100px;
+    overflow: auto;
     z-index: 5;
+}
+
+.menu::-webkit-scrollbar {
+    width: 4px;
+}
+
+.menu::-webkit-scrollbar-track {
+    background-color: var(--px-gray-5);
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color:var(--px-text);
 }
 
 .menu__buttons{
@@ -75,6 +88,8 @@
     .menu{
         position: sticky;
         left: 0;
+        top: 0;
+        transition: none;
     }
 }
 

@@ -1,0 +1,42 @@
+.communication_card {
+    display: flex;
+    border: 2px solid var(--px-border);
+    background-color: var(--px-bg);
+    padding: 12px 15px;
+    border-radius: 12px;
+    align-items: center;
+    margin-bottom: 18px;
+    transition: ease all 0.35s;
+}
+
+.communication_card:hover {
+    background-color: var(--px-theme);
+    border: 2px solid var(--px-theme);
+}
+
+
+.communication_card-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--px-gray-2);
+    color: var(--px-text);
+}
+
+.communication_card-text {
+    padding-left: 20px;
+}
+
+.communication_card-link {
+    color: var(--px-text);
+    line-height: 1.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.communication_card:hover .communication_card-link{
+    color: var(--px-theme-text);
+}

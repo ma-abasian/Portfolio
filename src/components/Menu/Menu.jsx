@@ -1,42 +1,51 @@
-import "../../assets/css/Menu/menu.css"
+import "../../assets/css/Menu/menu.css";
 import Title from "./Title.jsx";
 import Button from "./Button.jsx";
 import MobileMenu from "./MobileMenu.jsx";
-import {useState} from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+
+const menuItems = [
+  { id: 0, name: "Home", value: "house" },
+  { id: 1, name: "About", value: "person" },
+  { id: 2, name: "Services", value: "business_center" },
+  { id: 3, name: "Portfolio", value: "newsmode" },
+  { id: 4, name: "Contact", value: "phone_in_talk" },
+];
 
 const Menu = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  const menuItems = [
-    {id: 0, name: 'Home', value: 'house'},
-    {id: 1, name: 'About', value: 'person'},
-    {id: 2, name: 'Services', value: 'business_center'},
-    {id: 3, name: 'Portfolio', value: 'newsmode'},
-    {id: 4, name: 'Contact', value: 'phone_in_talk'},
-  ]
+  useEffect(() => {
+    const handleScroll = () => {
+      menuRef.current.style.top = window.scrollY + "px";
+    };
 
-  const handleMobileMenu = () => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleMobileMenu = useCallback(() => {
     setIsOpen(!isOpen);
-    const menu = document.getElementById('menu');
-    if (!isOpen) menu.style.left = "0";
-    else menu.style.left = "-100px";
-  }
+    if (!isOpen) menuRef.current.style.left = "0";
+    else menuRef.current.style.left = "-100px";
+  }, [isOpen]);
 
   return (
-      <>
+    <>
+      <MobileMenu onClick={handleMobileMenu} />
 
-        <MobileMenu onClick={handleMobileMenu}/>
-
-        <div className="menu" id="menu">
-          <Title/>
-          <ul className="menu__buttons">
-            {
-              menuItems.map(({name, value, id}) => <Button key={id} name={name} value={value}/>
-              )
-            }
-          </ul>
-        </div>
-      </>
+      <div ref={menuRef} className="menu" id="menu">
+        <Title />
+        <ul className="menu__buttons">
+          {menuItems.map(({ name, value, id }) => (
+            <Button key={id} name={name} value={value} />
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
 

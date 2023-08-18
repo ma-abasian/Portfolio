@@ -1,0 +1,49 @@
+.experienceCart {
+    display: flex;
+    padding: 15px 15px 20px;
+    background-color: var(--px-bg);
+    border: 2px solid var(--px-border);
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.experienceCart_icon {
+    width: 40px !important;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--px-theme-text);
+    color: var(--px-theme);
+    font-size: 20px;
+}
+
+.experienceCart_icon-style {
+
+    font-variation-settings: 'FILL' 1,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 48
+}
+
+.experienceCart_content{
+    width: 90%;
+    margin-left: 15px;
+}
+
+.experienceCart_date{
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+
+.experienceCart_title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experienceCart_text{
+    color: var(--px-text);
+    font-weight: 400;
+    line-height: 1.6rem;
+}

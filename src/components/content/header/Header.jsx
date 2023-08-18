@@ -7,7 +7,6 @@ const Header = () => {
     return (
         <div className="home__header">
             <Image imageSrc={HeadImage}/>
-            igiigiugi21212
             <HeaderContent/>
         </div>
     );

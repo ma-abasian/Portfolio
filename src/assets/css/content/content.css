@@ -1,11 +1,22 @@
-.home {
-    display: flex;
-    justify-content: center;
+.content {
+    width: 100%;
     background-color: var(--px-bg);
 }
 
+.section {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+
+.about{
+    background-color: var(--px-gray-1);
+}
+
 @media (min-width: 1024px) {
-    .content {
-        width: 100%;
-    }
+    /*.content {*/
+    /*    width: 100%;*/
+    /*}*/
 }

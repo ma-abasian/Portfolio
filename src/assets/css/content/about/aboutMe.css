@@ -1,0 +1,96 @@
+.about_container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.right_about {
+    width: 58%;
+    padding: 0 12px 0 48px;
+}
+
+.left_about {
+    width: 42%;
+    color: var(--bs-heading-color);
+}
+
+.line {
+    background-color: var(--px-theme-text);
+    height: 1px;
+    opacity: .25;
+    margin: 16px 0;
+}
+
+.aboutme_title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.aboutme_title:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--px-theme);
+}
+
+.aboutme_content {
+    padding: 0 10% 48px 0;
+}
+
+.aboutme_name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aboutme_job {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 26px;
+}
+
+.aboutme_story {
+    margin-bottom: 16px;
+    color: var(--px-text);
+    line-height: 1.6rem;
+
+}
+
+.experience_title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 48px;
+}
+
+.experience_title:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--px-theme);
+}
+
+/*@media (min-width: 1024px) {*/
+
+/*    .home__header {*/
+/*        flex-direction: row;*/
+/*        align-items: center;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 1440px) {*/
+
+/*}*/

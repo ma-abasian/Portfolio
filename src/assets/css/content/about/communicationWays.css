@@ -1,0 +1,20 @@
+.communication_ways {
+    display: flex;
+    align-items: flex-start;
+}
+
+.communication_ways-image {
+    width: 65%;
+    padding: 0 12px 24px;
+}
+
+.communication_ways-image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+.communication_ways-cards {
+    width: 40%;
+    padding: 0 12px 24px;
+}
